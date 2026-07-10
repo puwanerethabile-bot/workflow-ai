@@ -161,7 +161,8 @@ export const updateSettings = createServerFn({ method: "POST" })
       .select("preferences")
       .eq("user_id", context.userId)
       .maybeSingle();
-    const merged = settingsSchema.parse({ ...(existing?.preferences ?? {}), ...data });
+    const prev = (existing?.preferences ?? {}) as Record<string, unknown>;
+    const merged = settingsSchema.parse({ ...prev, ...data });
     const { error } = await context.supabase
       .from("user_settings")
       .upsert({ user_id: context.userId, preferences: merged as any });
