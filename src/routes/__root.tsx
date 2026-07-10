@@ -79,20 +79,24 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "AI Workplace Productivity Assistant" },
+      { title: "AI Workplace Productivity Assistant — Work smarter, faster" },
       {
         name: "description",
         content:
-          "Draft professional emails, plan your day, and summarize research in seconds with your AI-powered workplace productivity assistant.",
+          "One AI-powered platform for professional emails, intelligent day planning, and instant research summaries.",
       },
-      { property: "og:title", content: "AI Workplace Productivity Assistant" },
+      { property: "og:title", content: "AI Workplace Productivity Assistant — Work smarter, faster" },
       {
         property: "og:description",
         content:
-          "Automate the routine of workplace communication, planning, and research with a single AI-powered platform.",
+          "One AI-powered platform for professional emails, intelligent day planning, and instant research summaries.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "AI Workplace Productivity Assistant — Work smarter, faster" },
+      { name: "twitter:description", content: "One AI-powered platform for professional emails, intelligent day planning, and instant research summaries." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/4dbea0b0-3e51-4029-83fb-02f9c88e285b/id-preview-d5a3e3c0--ad7c123e-43fa-4aa7-a762-893c985a80fd.lovable.app-1783683064363.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/4dbea0b0-3e51-4029-83fb-02f9c88e285b/id-preview-d5a3e3c0--ad7c123e-43fa-4aa7-a762-893c985a80fd.lovable.app-1783683064363.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
